@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './styles.css';
-
 
 function DevForm({onSubmit}){
     const [latitude, setLatitude] = useState('');
@@ -103,7 +103,7 @@ function DevForm({onSubmit}){
             />
           </div>
           <div className="updateLocation">
-            <input type="button" value="[x]" onClick={e => updateLocation()} />
+            <button onClick={e => updateLocation()} type="button" ><FontAwesomeIcon icon="map-marker-alt"  /></button>
           </div>
         </div>
         <button type="submit" >Salvar</button>

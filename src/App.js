@@ -5,8 +5,14 @@ import './App.css';
 import './Sidebar.css';
 import './Main.css';
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+
+
 import DevForm from './components/DevForm';
 import DevItem from './components/DevItem';
+library.add(fab, faMapMarkerAlt)
 //componente: bloco isolada de html css e js o qual não interfere no restante da aplicação
 //propriedade: informações que um componente pai passa para o componente filho
 //estado:informações mantidas pelo componente (lembrar: imutabilidade)
